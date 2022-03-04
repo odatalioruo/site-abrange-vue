@@ -6,9 +6,9 @@
                 <div class="h">  
                 <!-- <li v-for="(item, index) in meni" v-bind:key="index" :class="index%2 === 0 ? 'par' : 'impar' "><a>{{item.funcao}}</a></li> -->
                 <li v-for="(item, index) in meni" v-bind:key="index" >
-                <a :href="item.href"><item-menu :text="item.funcao" :index="index" /></a>
+                <a :href="item.href"><item-menu :text="item.funcao" :index="index" /> </a>
                 </li>                
-                <li Class="acess"><div class="tez" ><a href="https://sistemagtf.com.br">ACESSO</a ></div></li>
+                :<li Class="acess" @click="penis()"><div class="tez" ><a href="https://sistemagtf.com.br">ACESSO</a ></div></li>
                 </div>
             </ul>    
                 
@@ -17,6 +17,8 @@
 </template>
 <script>
 import itemMenu from './itemMenu.vue'
+
+
 export default {
     el: '#o',
     name: 'menu',
@@ -30,12 +32,10 @@ export default {
            { id: 3, funcao:'PARCEIROS', href: '#parceiros'},
            { id: 4, funcao:'CONTATO', href: '#contato'},
            
-       ]
-       }
+       ],
+       } 
     },
-    methods: {
-       
-    }
+   
 }
 </script>
 <!--Classes sempre declaradas em ordem de aparecimento-->

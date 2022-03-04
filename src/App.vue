@@ -19,6 +19,7 @@ import gestao from './components/gestao.vue'
 import clientes from './components/clientes.vue'
 import onlin from './components/onlin.vue'
 import atend from './components/aten.vue'
+
 export default {
   name: 'App',
   components: {
@@ -28,7 +29,7 @@ export default {
     gestao,
     clientes,
     onlin,
-    atend
+    atend,
   }
 }
 </script>
@@ -63,7 +64,6 @@ body{ margin:0px; background: grey; background-size: 148%;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   background-color:#fff;
-
 }
 html {
   scroll-behavior: smooth;

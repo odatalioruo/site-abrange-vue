@@ -12,8 +12,10 @@ export default {
     props: {
         text: String,
         index: Number
-    }
+    },
+
 }
+
 </script>
 <style scoped>
 .par

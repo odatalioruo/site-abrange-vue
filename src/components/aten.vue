@@ -1,12 +1,12 @@
 <template>
 <div>
-    <div class="imag">
+    <div id="contato" class="imag">
         <div class="pen">
             <div class="card"></div>
         </div>
     </div>
     
-    <div id="contato" class="contedor">
+    <div class="contedor">
         <div class="container">
             <div class="fotoum">
 
@@ -33,12 +33,6 @@
                     <div v-for="(item,index) in prefi" :class="item.class" v-bind:key="index">
                         <div :class="item.class2"></div>
                     </div>
-                    <!-- <div class="a"><div class="cba"></div></div>
-                    <div class="b"><div class="pxr"></div></div>
-                    <div class="c"><div class="tbc"></div></div>
-                    <div class="d"><div class="jcr"></div></div>
-                    <div class="e"><div class="alm"></div></div>
-                    <div class="f"><div class="cdg"></div></div> -->
                 </div>
     </div>
     <div class="foote">
@@ -65,7 +59,7 @@ export default {
             {id: 6, class: "f", class2:"cdg"}
         ]
     }
-    }
+    },
 }
 </script>
 
@@ -77,6 +71,7 @@ export default {
     height: 25.4vw;
 }
 .container {  display: grid;
+margin-left: 8em;
   grid-template-columns: 1fr 3.5fr 1fr 3.5fr;
   grid-template-rows: 1fr;
   grid-auto-columns: 1fr;

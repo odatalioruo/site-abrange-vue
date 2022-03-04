@@ -12,10 +12,14 @@
            
 
     <div class="container">     
-        <div class="produtos">
-            <div class="panel" v-for="(item, index) in produto" v-bind:key="index">
-             <div>{{item.penis}}</div>
-            </div>
+        <div ref="alpksd" class="produtos">
+            <!-- <div class="panel" v-for="(item, index) in produto" v-bind:key="index">
+             <div>{{produto.penis}}<br></div>
+            
+            </div> -->
+             <li class="panel" v-for="(user,index) in users" v-bind:key="'user'+index">
+               {{user.name}}<br>{{user.email}}<br>{{user.username}}<br>{{user.website}}
+             </li>
         </div>
     </div>
         <h1 id="servicos" class="laranja">SERVIÇOS</h1>
@@ -27,11 +31,25 @@
 
 
 <script>
+import axios from 'axios'
+     
 
 export default {
-    
+    methods: {
+        Testeaxios(){
+          const kk = this
+          axios.get('https://jsonplaceholder.typicode.com/users')
+          .then(function(response){
+            console.log(response)
+            kk.users = response.data
+          })
+        }
+
+},
+    // mixins: [baba],
     data(){
         return{
+          users:[],
        produto: [
            { id: 0, penis: 'acarro'},
            { id: 1, penis: 'banana'},
@@ -39,9 +57,16 @@ export default {
            { id: 3, penis: 'damasco'},
            { id: 4, penis: 'esmeralda'},
            
-       ]
+       ],
+       //peniano:[]
        }
-    }
+    },
+
+     mounted() {
+        this.Testeaxios()
+        console.log(this.$refs.alpksd)
+     },
+   
 }
 </script>
 
