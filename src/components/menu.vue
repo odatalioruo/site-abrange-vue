@@ -1,14 +1,14 @@
 <template>
-    <div class="Menu">
+    <div class="Menuu">
        <div> <img class="abrange" src="./img/abr.png"></div>
                     
-            <ul class="menu-item">
-                <div class="h">  
+            <ul class="caralho">
+                <div class="he">  
                 <!-- <li v-for="(item, index) in meni" v-bind:key="index" :class="index%2 === 0 ? 'par' : 'impar' "><a>{{item.funcao}}</a></li> -->
                 <li v-for="(item, index) in meni" v-bind:key="index" >
                 <a :href="item.href"><item-menu :text="item.funcao" :index="index" /> </a>
                 </li>                
-                :<li Class="acess" @click="penis()"><div class="tez" ><a href="https://sistemagtf.com.br">ACESSO</a ></div></li>
+                <li Class="acesso" @click="penis()"><div class="tezi" ><a href="https://sistemagtf.com.br">ACESSO</a ></div></li>
                 </div>
             </ul>    
                 
@@ -41,20 +41,20 @@ export default {
 <!--Classes sempre declaradas em ordem de aparecimento-->
 <style scoped>
 
-.h{  width: 100%;
+.he{  width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     perspective: 100px;
 }
-.Menu{
+.Menuu{
     display:none;
     
 }
 @media only screen and (min-width: 1024px){
     /* PC */
-.Menu{
+.Menuu{
     
     align-items: flex-end;
     display:flex;
@@ -72,7 +72,7 @@ export default {
 .par{
     background-color: #78a;
 } */
- ul.menu-item {
+ ul.caralho {
      
     list-style-type: none;
     margin: 0;
@@ -81,13 +81,13 @@ export default {
     font-size: 10pt;
 }
 
-ul.menu-item li {
+ul.caralho li {
     float: left;
     margin-left: 0.5vw;
     
 }
 
-ul.menu-item li a {
+ul.caralho li a {
     
     color: white;
     text-align: center;
@@ -95,10 +95,10 @@ ul.menu-item li a {
 }
 
 
-ul.menu-item li a.active {
+ul.caralho li a.active {
     background-color:#04AA6D;
 }
-.acess{
+.acesso{
     margin-top: 20px;
     height: 5em;
     width: 8em;
@@ -108,7 +108,7 @@ ul.menu-item li a.active {
      position:relative;
     
 }
-.tez
+.tezi
 {
     background-image: linear-gradient( #fff0 50%,  rgb(255, 88,0) 50%);
     transform: skewY(-10deg);
@@ -116,10 +116,10 @@ ul.menu-item li a.active {
     transition-duration: .7s;  
     margin:3px 0 3px 0;  
 }
-.acess:hover{
+.acesso:hover{
      transform: skewY(-10deg);
 }
-.tez:hover{
+.tezi:hover{
      transform: skewY(10deg);
 }
 /*

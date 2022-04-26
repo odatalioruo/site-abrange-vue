@@ -42,14 +42,14 @@ export default {
 {
     background-image: linear-gradient( #fff0 50%,  #7ea1ae 50%);
     transform: skewY(10deg);
-    padding: 1em;
+    padding: 2em 1em 2em 1em;
     transition-duration: .44s;    
 }
 .tey
 {
     background-image: linear-gradient( #fff0 50%, #4a616e 50%);
     transform: skewY(-10deg);
-    padding: 1em;
+    padding: 2em 1em 2em 1em;
     transition-duration: .44s;  
 }
 .par:hover

@@ -6,7 +6,15 @@
   <gestao />
   <clientes />
   <onlin />
+  <clientes />
+  <servicos />  
+  <clientes />
+  <alimento />
+  <clientes />
+  <controle />
   <atend />
+
+
 </div>
 
 </template>
@@ -19,6 +27,10 @@ import gestao from './components/gestao.vue'
 import clientes from './components/clientes.vue'
 import onlin from './components/onlin.vue'
 import atend from './components/aten.vue'
+import servicos from './components/servicos.vue'
+
+import alimento from './components/alimentos.vue'
+import controle from './components/controle.vue'
 
 export default {
   name: 'App',
@@ -30,6 +42,9 @@ export default {
     clientes,
     onlin,
     atend,
+    servicos,
+    alimento,
+    controle
   }
 }
 </script>

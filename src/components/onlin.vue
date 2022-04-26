@@ -1,21 +1,47 @@
 <template>
     <div class="corpo">
-        <div class="acess">
-        <h1>ACESSO<br>on-line</h1>
-        <p>
+        <b-container fluid class="cont">
+            
+            <b-row align-v="center">
+                <b-col sm="1"></b-col>
+                <b-col sm="5" class="ko">
+                
+                <b-row>
+                    <b-col sm="6"><div class="obra"></div>   </b-col> <b-col></b-col>
+                </b-row>
+                    
+                    
+                    <div class="acess">
+                        Rapidez e praticidade para obter o
+                        planejamento completo da obra, com
+                        cronogramas físico-financeiro,
+                        histograma de mão de obra e
+                        equipamentos. Mais transparência,
+                        economicidade e resultados.
+                    </div>    
+                </b-col>
+                <b-col><div class="engine" align-self="stretch"></div> </b-col>
+                <b-col sm="1">               
+                </b-col>
+            </b-row>
+                <div class="tes"></div>
+        </b-container>
+       
+        
+    </div>
+</template>
+
+
+<script>
+a
+var a = `
             Rapidez e praticidade para obter o
             planejamento completo da obra, com
             cronogramas físico-financeiro,
             histograma de mão de obra e
             equipamentos. Mais transparência,
             economicidade e resultados.
-        </p>
-        </div>
-    </div>
-</template>
-
-
-<script>
+        `
 export default {
     
 }
@@ -23,28 +49,58 @@ export default {
 <style scoped>
 h1{font-family: 'Bold'; margin-bottom: 1px; line-height: 1.1;}
 p{margin-top: 11px;}
-    .corpo{
+    .corpo{ 
      
-        height:75vh;
-        display:flex;
-        background: url('./img/banner1.png');
+        background: linear-gradient(-45deg,  #89a , #678);
         background-size: cover;
-        align-items: center;
         font-family: 'Light';
         color:whitesmoke;
+        overflow: hidden;
+        position:relative;
+        z-index: 1;
     }
     .acess{
-    width: 24vw;
-    font-size: 1.5em;
+    padding: 2em 0;
+    font-size: 1.3em;
     /* margin-left: 8vw; */
     text-align: left;
-    line-height: 1.4;
-    padding: 7em;
+    width: 75%;
+    line-height: 1.6;
+    
     }
     @media only screen and (max-width: 1500px){
    .acess{
        width: 25vw;
        font-size: 1.2em;
          }
+}
+.engine{
+    height: 50vh;
+    background: url('./img/enginer.jpg');
+    background-size: cover;
+}
+.obra{
+    min-height: 7vw;
+    width: 135%;
+    background: url('./img/OBRAS2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+}
+.tes{
+    background: url('./img/listralaranja.png');
+    background-size: cover;
+    height:24vh;
+    min-width: 85vw;
+    z-index: 9999;
+    position:absolute;
+    margin-top: -12vh;
+}
+.cont{
+    margin:10vh 0vh;
+}
+.ko{
+    display:block;
+    align-content: center;
 }
 </style>
