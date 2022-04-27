@@ -1,30 +1,34 @@
 <template>
     <div class="corpo">
         <b-container fluid class="cont">
-            
-            <b-row align-v="center">
-                <b-col sm="1"></b-col>
-                <b-col sm="5" class="ko">
-                
-                <b-row>
-                    <b-col sm="6"><div class="obra"></div>   </b-col> <b-col></b-col>
-                </b-row>
-                    
-                    
-                    <div class="acess">
-                        Rapidez e praticidade para obter o
-                        planejamento completo da obra, com
-                        cronogramas físico-financeiro,
-                        histograma de mão de obra e
-                        equipamentos. Mais transparência,
-                        economicidade e resultados.
-                    </div>    
+            <b-row>
+                 <b-col lg="1"></b-col>
+                <b-col cols="11" lg="4"  align-self="center">
+                     <b-row >
+                        <b-col cols="12" lg="5"><div class="obra"></div></b-col>
+                    </b-row>
+                    <b-row>
+                        <b-col cols="12" >
+                            <div class="acess">
+                                Rapidez e praticidade para obter o
+                                planejamento completo da obra, com
+                                cronogramas físico-financeiro,
+                                histograma de mão de obra e
+                                equipamentos. Mais transparência,
+                                economicidade e resultados.
+                            </div>
+                        </b-col>   
+                    </b-row>
                 </b-col>
-                <b-col><div class="engine" align-self="stretch"></div> </b-col>
-                <b-col sm="1">               
+                <b-col lg="1"></b-col>
+                <b-col cols="12" lg="5">
+                    <div class="engine"></div>
                 </b-col>
+                <b-col lg="1"></b-col>
             </b-row>
-                <div class="tes"></div>
+           
+
+        <div class="tes"></div>
         </b-container>
        
         
@@ -64,24 +68,18 @@ p{margin-top: 11px;}
     font-size: 1.3em;
     /* margin-left: 8vw; */
     text-align: left;
-    width: 75%;
     line-height: 1.6;
     
     }
-    @media only screen and (max-width: 1500px){
-   .acess{
-       width: 25vw;
-       font-size: 1.2em;
-         }
-}
+   
 .engine{
-    height: 50vh;
+    min-height: 400px;
     background: url('./img/alimento2.jpg');
     background-size: cover;
 }
 .obra{
-    min-height: 7vw;
-    width: 135%;
+    min-height: 130px;
+    min-width: 35em;
     background: url('./img/alimento.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -91,10 +89,11 @@ p{margin-top: 11px;}
     background: url('./img/listaverde.png');
     background-size: cover;
     height:24vh;
-    min-width: 85vw;
+    min-width: 95vw;
     z-index: 9999;
     position:absolute;
-    margin-top: -12vh;
+    margin-top: -10vh;
+    margin-left: -8vw
 }
 .cont{
     margin:10vh 0vh;
@@ -102,5 +101,9 @@ p{margin-top: 11px;}
 .ko{
     display:block;
     align-content: center;
+}
+    @media only screen and (max-width: 991px){
+        .tes{ display:none; }
+        .engine{ display:none; }
 }
 </style>
