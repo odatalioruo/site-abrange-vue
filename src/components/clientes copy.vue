@@ -1,15 +1,9 @@
 <template>
    
     <div class="corpo">
-        <b-row>
-            <b-col cols="12" sm="6">
-                   <div class="container">
-                    <div class="imagem" @mousedown.middle="redirect"></div>
-                    </div>
-            </b-col>
-            <b-col cols="12" sm="6">
-                <div class="texto">
-             <h1 class="laranja">App exclusivo para clientes</h1>
+        <div class="container">
+        <div class="texto">
+             <h1 class="laranja">App exclusivo<br> para clientes</h1>
             <p>
                 compra inovadora, o processo de pagamento e
                 finalização de compras é mais fácil, rápido e
@@ -19,8 +13,8 @@
                 sistemas Android e iOS. 
             </p>
         </div>
-            </b-col>
-        </b-row>
+        <div class="imagem" @mousedown.middle="redirect"></div>
+        </div>
     </div>
 </template>
 
@@ -45,7 +39,7 @@ h1{line-height: 1.1; font-size:2.5em;}
     display: flex;
     justify-content: center;
     align-items: center;
-    margin:5em 0em;
+    margin:5em 5em;
     font-family: 'Regular';
     height: 600px;
     overflow: hidden;
@@ -63,20 +57,22 @@ h1{line-height: 1.1; font-size:2.5em;}
 }
 
 .texto {
+     grid-area: texto; 
+     width: 34vw;
      font-size: 1.15em;
      color: #575c66;
      line-height: 1.4;
-     transform:scaleY(1.16);
+     transform:scaleY(1.13);
      }
 
 
 .imagem {
+    margin-left:5vw;
     background:url('./img/APP.png');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    grid-area: imagem;
-    min-width: 300px; 
-    min-height: 300px;
+    grid-area: imagem; 
+    min-height: 350px;
      }
 
 /* @media only screen and (max-width: 1500px){

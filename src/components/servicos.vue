@@ -2,29 +2,29 @@
     <div class="corpo">
         <b-container fluid class="cont">
             <b-row>
-                 <b-col lg="1" class="pla"></b-col>
-                <b-col cols="11" lg="4" align-self="center">
-                     <b-row >
-                        <b-col cols="12" lg="5" class='center'><div class="obra"></div></b-col>
+                 <b-col lg="1"></b-col>
+                <b-col cols="12" lg="4"  align-self="center">
+                     <b-row>
+                        <b-col cols="12" lg="5" class="q"><div class="obra"></div></b-col>
                     </b-row>
                     <b-row>
-                        <b-col cols="12" class='center'>
+                        <b-col cols="12" >
                             <div class="acess">
                                 Rapidez e praticidade para obter o
                                 planejamento completo da obra, com
                                 cronogramas físico-financeiro,
                                 histograma de mão de obra e
-                                equipamentos. Mais transparsdência,
+                                equipamentos. Mais transparência,
                                 economicidade e resultados.
                             </div>
                         </b-col>   
                     </b-row>
                 </b-col>
-                <b-col lg="1" class="pla"></b-col>
+                <b-col lg="1"></b-col>
                 <b-col cols="12" lg="5">
                     <div class="engine"></div>
                 </b-col>
-                <b-col lg="1" class="pla"></b-col>
+                <b-col lg="1"></b-col>
             </b-row>
            
 
@@ -53,7 +53,10 @@ export default {
 <style scoped>
 h1{font-family: 'Bold'; margin-bottom: 1px; line-height: 1.1;}
 p{margin-top: 11px;}
-    .corpo{ 
+
+
+
+.corpo{ 
      
         background: linear-gradient(-45deg,   #49626f, #7695a1 );
         background-size: cover;
@@ -69,24 +72,24 @@ p{margin-top: 11px;}
     /* margin-left: 8vw; */
     text-align: left;
     line-height: 1.6;
-    
+    transform:scaleY(1.16);
     }
-
+   
 .engine{
-    min-height: 440px;
+    min-height: 400px;
     background: url('./img/alimento2.jpg');
     background-size: cover;
 }
 .obra{
     min-height: 130px;
-    min-width: 90vw;
-    background: url('./img/alimento.png');
+    min-width: 80vw;
+    background: url('./img/servico2.png');
     background-size: contain;
     background-repeat: no-repeat;
     display: block;
 }
 .tes{
-    background: url('./img/listaverde.png');
+    background: url('./img/listacinza.png');
     background-size: cover;
     height:24vh;
     min-width: 95vw;
@@ -105,11 +108,19 @@ p{margin-top: 11px;}
     @media only screen and (max-width: 991px){
         .tes{ display:none; }
         .engine{ display:none; }
-        .pla{ display:none; }
-           .center{
-       display:flex;
-       justify-content: center;
-       text-align:center;
-   }
+        .acess{
+            font-size: 1.1em;
+            padding: 2em 2em;
+        }
+        .q{
+        display: flex;
+        justify-content: center;
+        }
+        .obra{
+            min-height: 85px;
+            min-width: 70vw;
+            display: flex;
+            justify-content: center;
+        }
 }
 </style>

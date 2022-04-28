@@ -3,9 +3,9 @@
         <b-container fluid class="cont">
             <b-row>
                  <b-col lg="1"></b-col>
-                <b-col cols="11" lg="4"  align-self="center">
-                     <b-row >
-                        <b-col cols="12" lg="5"><div class="obra"></div></b-col>
+                <b-col cols="12" lg="4"  align-self="center">
+                     <b-row>
+                        <b-col cols="12" lg="5" class="q"><div class="obra"></div></b-col>
                     </b-row>
                     <b-row>
                         <b-col cols="12" >
@@ -53,7 +53,10 @@ export default {
 <style scoped>
 h1{font-family: 'Bold'; margin-bottom: 1px; line-height: 1.1;}
 p{margin-top: 11px;}
-    .corpo{ 
+
+
+
+.corpo{ 
      
         background: linear-gradient(-45deg,   #49626f, #7695a1 );
         background-size: cover;
@@ -64,12 +67,12 @@ p{margin-top: 11px;}
         z-index: 1;
     }
     .acess{
-    padding: 2em 0;
+    padding: 2em 0em;
     font-size: 1.3em;
     /* margin-left: 8vw; */
     text-align: left;
     line-height: 1.6;
-    
+    transform:scaleY(1.16);
     }
    
 .engine{
@@ -79,7 +82,7 @@ p{margin-top: 11px;}
 }
 .obra{
     min-height: 130px;
-    min-width: 35em;
+    min-width: 80vw;
     background: url('./img/alimento.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -105,5 +108,19 @@ p{margin-top: 11px;}
     @media only screen and (max-width: 991px){
         .tes{ display:none; }
         .engine{ display:none; }
+        .acess{
+            font-size: 1.1em;
+            padding: 2em 2em;
+        }
+        .q{
+        display: flex;
+        justify-content: center;
+        }
+        .obra{
+            min-height: 85px;
+            min-width: 70vw;
+            display: flex;
+            justify-content: center;
+        }
 }
 </style>
