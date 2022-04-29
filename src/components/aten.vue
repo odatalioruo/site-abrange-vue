@@ -155,6 +155,7 @@ p {
     display: flex;
     justify-content: center;
 }
+p{font-size: 10pt;}
  }
 
 

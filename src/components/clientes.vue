@@ -1,13 +1,13 @@
 <template>
    
     <div class="corpo">
-        <b-row>
-            <b-col cols="12" sm="6">
-                   <div class="container">
+        <b-row class="center">
+            <b-col cols="12" sm="3">
+                   <div class="cont">
                     <div class="imagem" @mousedown.middle="redirect"></div>
                     </div>
             </b-col>
-            <b-col cols="12" sm="6">
+            <b-col cols="12" sm="5">
                 <div class="texto">
              <h1 class="laranja">App exclusivo para clientes</h1>
             <p>
@@ -51,16 +51,6 @@ h1{line-height: 1.1; font-size:2.5em;}
     overflow: hidden;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "texto imagem"
-    ;
-}
 
 .texto {
      font-size: 1.15em;
@@ -75,16 +65,22 @@ h1{line-height: 1.1; font-size:2.5em;}
     background-size: cover;
     background-repeat: no-repeat;
     grid-area: imagem;
-    min-width: 300px; 
-    min-height: 300px;
+    width: 300px; 
+    height: 300px;
      }
 
-/* @media only screen and (max-width: 1500px){
+    .cont{
+        display: flex;
+        justify-content: right;
+    }
+
+ @media only screen and (max-width: 800px){
    .texto{
-     width: 25vw;
+    
     font-size: 1.35em;
+    padding:2em;
          }
-} */
+} 
  @media only screen and (min-width: 1800px){
    .texto{
      width: 30vw;
@@ -94,5 +90,9 @@ h1{line-height: 1.1; font-size:2.5em;}
 }
 @media only screen and (max-width: 1020px){
     .texto{font-size: 0.9em;}
+
+    .cont{
+         justify-content: center;
+    }
 }
 </style>

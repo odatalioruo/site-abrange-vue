@@ -83,4 +83,8 @@ body{ margin:0px; background: grey; background-size: 148%;
 html {
   scroll-behavior: smooth;
 }
+.center{
+  display: flex;
+  justify-content: center;
+}
 </style>

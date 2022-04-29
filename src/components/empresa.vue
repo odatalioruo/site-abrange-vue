@@ -1,12 +1,17 @@
 <template>
    <div>
         <div class="corpo">
-                <h1 id="empresa" class="laranja">EMPRESA</h1>
-            <p><span class="bold"> ABRANGE </span>, é um sistema para a gestão e controle de prestação de serviços<br>
-            tecnológicos para o setor de construções civíl para obras públicas e privadas.<br>
-            O ABRANGE oferece mais tecnologia, segurança de forma transparente de<br>
-            relatórios e estatísticas para seus clientes.
-            </p>
+            <h1 id="empresa" class="laranja">EMPRESA</h1>
+              <b-row class="center">
+                <b-col md="6">
+                  <p><span class="bold"> 
+                    ABRANGE </span>, é um sistema para a gestão e controle de prestação de serviços
+                    tecnológicos para o setor de construções civíl para obras públicas e privadas.
+                    O ABRANGE oferece mais tecnologia, segurança de forma transparente de
+                    relatórios e estatísticas para seus clientes.
+                  </p>
+                </b-col>
+              </b-row>
         </div>
    <h1 id="produtos" class="laranja">PRODUTOS</h1>
            
@@ -119,7 +124,7 @@ h1{
     padding: 0px 10px 10px 10px;
     }
 p{
-        padding:2rem 5rem;
+        
         color:#4a5a70;
         font-weight:600;
         line-height: 1.8;
@@ -135,7 +140,16 @@ span{font-weight: 800;}
      padding:2.5rem;
      margin-bottom: 2rem;
      overflow:hidden;
-         overflow: hidden;
     }
 
+@media only screen and (max-width: 1000px){
+  p{ font-size:1.1em;}
+   .corpo{
+    min-height: 400px;
+     padding:2.5rem;
+     margin-bottom: 2rem;
+     overflow:hidden;
+    }
+
+}
 </style>
