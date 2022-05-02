@@ -1,6 +1,8 @@
 <template>
 <div>
+  <!-- <carousel /> -->
   <Menu />
+  <carousel />
   <Card />
   <empresa />
   <gestao />
@@ -20,6 +22,7 @@
 </template>
 
 <script>
+import carousel from './components/carousel.vue'
 import Menu from './components/menu.vue'
 import Card from './components/card.vue'
 import Empresa from './components/empresa.vue'
@@ -35,6 +38,7 @@ import controle from './components/controle.vue'
 export default {
   name: 'App',
   components: {
+    carousel,
     Menu,
     Card,
     Empresa,

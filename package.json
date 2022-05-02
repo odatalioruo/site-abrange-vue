@@ -15,7 +15,8 @@
     "core-js": "^3.6.5",
     "sass-loader": "^12.6.0",
     "vue": "^3.0.0",
-    "vue-axios": "^3.4.1"
+    "vue-axios": "^3.4.1",
+    "vue-flux": "^6.4.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

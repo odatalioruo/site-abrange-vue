@@ -105,6 +105,9 @@ p{margin-top: 11px;}
     display:block;
     align-content: center;
 }
+     @media only screen and (max-width: 1400px){
+         .acess{ font-size: 1.13em;}
+     }
     @media only screen and (max-width: 991px){
         .tes{ display:none; }
         .engine{ display:none; }

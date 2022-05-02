@@ -53,10 +53,11 @@ h1{line-height: 1.1; font-size:2.5em;}
 
 
 .texto {
-     font-size: 1.15em;
+     font-size: 1.1em;
      color: #575c66;
      line-height: 1.4;
      transform:scaleY(1.16);
+     
      }
 
 
@@ -81,13 +82,7 @@ h1{line-height: 1.1; font-size:2.5em;}
     padding:2em;
          }
 } 
- @media only screen and (min-width: 1800px){
-   .texto{
-     width: 30vw;
-    font-size: 1.35em;
-  
-         }
-}
+
 @media only screen and (max-width: 1020px){
     .texto{font-size: 0.9em;}
 

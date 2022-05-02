@@ -133,16 +133,23 @@ p {
  .prefeituras{
          justify-content: center;
          display: flex;
-         margin:2em;
+         margin:.75em;
  }
- .cba{background:url('./img/rosario.png'); height: 10em; background-size: cover; padding-bottom: 2em;}
- .tbc{background:url('./img/nova.png'); height: 10em; background-size: cover; padding-bottom: 2em;}
- .pxr{background:url('./img/diamantino.png'); height: 10em; background-size: cover; padding-bottom: 2em;}
- .jcr{background:url('./img/amm.png'); height: 10em; background-size: cover; padding-bottom: 2em;}
- .alm{background:url('./img/peixoto.png'); height: 10em; background-size: cover; padding-bottom: 2em;}
- .cdg{background:url('./img/barra.png'); height: 10em; background-size: cover; padding-bottom: 2em;}
+ .cba{background:url('./img/rosario.png'); height: 11em; background-size: cover; }
+ .tbc{background:url('./img/nova.png'); height: 11em; background-size: cover; }
+ .pxr{background:url('./img/diamantino.png'); height: 11em; background-size: cover; }
+ .jcr{background:url('./img/amm.png'); height: 11em; background-size: cover; }
+ .alm{background:url('./img/peixoto.png'); height: 11em; background-size: cover; }
+ .cdg{background:url('./img/barra.png'); height: 11em; background-size: cover; }
 
-
+     @media only screen and (max-width: 1400px){ 
+.cba{background:url('./img/rosario.png'); height: 8em; background-size: cover;}
+ .tbc{background:url('./img/nova.png'); height: 8em; background-size: cover;}
+ .pxr{background:url('./img/diamantino.png'); height: 8em; background-size: cover;}
+ .jcr{background:url('./img/amm.png'); height: 8em; background-size: cover;}
+ .alm{background:url('./img/peixoto.png'); height: 8em; background-size: cover;}
+ .cdg{background:url('./img/barra.png'); height: 8em; background-size: cover;}
+     }
  @media only screen and (max-width: 762px){
       #contato{
                 display:none;
