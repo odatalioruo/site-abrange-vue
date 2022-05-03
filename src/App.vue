@@ -3,7 +3,6 @@
   <!-- <carousel /> -->
   <Menu />
   <carousel />
-  <Card />
   <empresa />
   <gestao />
   <clientes />
@@ -24,7 +23,6 @@
 <script>
 import carousel from './components/carousel.vue'
 import Menu from './components/menu.vue'
-import Card from './components/card.vue'
 import Empresa from './components/empresa.vue'
 import gestao from './components/gestao.vue'
 import clientes from './components/clientes.vue'
@@ -40,7 +38,6 @@ export default {
   components: {
     carousel,
     Menu,
-    Card,
     Empresa,
     gestao,
     clientes,
