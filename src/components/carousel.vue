@@ -162,7 +162,7 @@ ol, li {
   overflow: hidden;
   counter-reset: item;
   scroll-behavior:smooth;
-  scroll-snap-type:x mandatory;
+  scroll-snap-type: x mandatory;
 }
 
 .carousel__slide {
@@ -210,7 +210,7 @@ ol, li {
   .carousel__snapper {
     animation-name: tonext, snap;
     animation-timing-function:linear;
-    animation-duration: 2s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
   }
 
