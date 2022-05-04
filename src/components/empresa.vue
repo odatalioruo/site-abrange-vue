@@ -16,17 +16,19 @@
    <h1 id="produtos" class="laranja">PRODUTOS</h1>
            
 
-    <div class="container">     
-        <div ref="alpksd" class="produtos">
-             <div class="panel" v-for="(item, index) in produto" v-bind:key="index">
-             <div>{{produto.penis}}<br></div>
-            
-            </div> 
-             <li class="panel" v-for="(user,index) in users" v-bind:key="'user'+index">
+    <b-row class="contain">     
+        <b-row ref="alpksd" class="produtos">
+             <b-col cols="12" lg="5" class="panel" v-for="(item, index) in produto" v-bind:key="index">
+              <div>
+                
+                
+              </div>
+            </b-col> 
+             <!-- <li class="panel" v-for="(user,index) in users" v-bind:key="'user'+index">
                {{user.name}}<br>{{user.email}}<br>{{user.username}}<br>{{user.website}}
-             </li>
-        </div>
-    </div>
+             </li> -->
+        </b-row>
+    </b-row>
         <h1 id="servicos" class="laranja">SERVIÇOS</h1>
    </div>
    
@@ -56,12 +58,10 @@ export default {
         return{
           users:[],
        produto: [
-           { id: 0, penis: 'acarro'},
-           { id: 1, penis: 'banana'},
-           { id: 2, penis: 'caqui'},
-           { id: 3, penis: 'damasco'},
-           { id: 4, penis: 'esmeralda'},
-           
+           { id: 0, emage: `<`, link: '#obras'},
+           { id: 1, emage: './img/', link: '#servicos'},
+           { id: 2, emage: './img/', link: '#alimentos'},
+           { id: 3, emage: './img/', link: '#controle'},         
        ],
        //peniano:[]
        }
@@ -73,16 +73,13 @@ export default {
 #produtos{
   padding-bottom: 2em;
 }
-.container{ 
+.contain{ 
   color: white;
   padding: 1rem;
   padding-bottom: 3em;
 }
 .produtos{
-  max-width: 1200px;
   margin: 0 auto;
-  display: grid;
-  grid-gap: 1rem;
   justify-content: center;
   max-width: 1024px;
 }
@@ -96,16 +93,18 @@ export default {
    background: linear-gradient(90deg, #789, #abc);
    min-height: 7em;
    min-width: 70vw;
+   margin: 4em;
    background-size: cover;
-  
+
  }
 }
 .panel
  {
-   background: linear-gradient(90deg, #789, #abc);
-   min-height: 7em;
-   background-size: cover;
-  
+  background: linear-gradient(90deg, #789, #abc);
+  min-height: 4em;
+  margin: 1em;
+  border-radius: 1.25em;
+  background-size: cover;
  }
 .laranja{font-size: 200%; margin-bottom: 0.3em;}
 .bold{
