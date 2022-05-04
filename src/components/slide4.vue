@@ -3,7 +3,7 @@
     <div class="section">
         <b-row align-v="center" class="testando">
             <b-col cols="2"></b-col>
-            <b-col cols="5">
+            <b-col  cols="10" md="5">
                 <div class="sasas"></div>
                 <div class="texto">
                        ELETRONICOS, EQUIPAMENTOS <br>E MÁQUINAS DE QUALIDADE.

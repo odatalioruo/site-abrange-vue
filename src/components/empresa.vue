@@ -20,8 +20,8 @@
         <b-row ref="alpksd" class="produtos">
              <b-col cols="12" lg="5" class="panel" v-for="(item, index) in produto" v-bind:key="index">
               <div>
-                
-                
+                <img v-bind:src="item.emage" height="100px">
+                <a v-bind:href="item.link">{{item.nome}}</a>
               </div>
             </b-col> 
              <!-- <li class="panel" v-for="(user,index) in users" v-bind:key="'user'+index">
@@ -58,10 +58,10 @@ export default {
         return{
           users:[],
        produto: [
-           { id: 0, emage: `<`, link: '#obras'},
-           { id: 1, emage: './img/', link: '#servicos'},
-           { id: 2, emage: './img/', link: '#alimentos'},
-           { id: 3, emage: './img/', link: '#controle'},         
+           { id: 0, emage: `./img/obras1.png`, link: '#obras', nome: 'OBRAS'},
+           { id: 1, emage: './img/servico0.png', link: '#servico', nome: 'SERVIÇOS'},
+           { id: 2, emage: './img/alimentos1.png', link: '#alimentos', nome: 'ALIMENTOS'},
+           { id: 3, emage: './img/controle1.png', link: '#controle', nome: 'CONTROLE'},
        ],
        //peniano:[]
        }

@@ -66,7 +66,7 @@ export default {
     
 }
 @media only screen and (max-width: 1370px){
-    .abrange{ height: 50px !important; background:url("./img/abr.png"); background-size:cover; margin-top:.7em;}
+    .abrange{ height:80px; background:url("./img/abr.png"); background-size:contain; background-repeat: no-repeat}
 }
 
 @media only screen and (min-width: 1024px){
@@ -81,7 +81,7 @@ export default {
     margin:0px;
     min-width:100vw;
 }
-.abrange{ height:80px; background:url("./img/abr.png"); background-size:cover; }
+.abrange{ height:80px; background:url("./img/abr.png"); background-size:contain; background-repeat: no-repeat;}
 
  ul.caralho {
      

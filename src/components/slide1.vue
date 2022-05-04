@@ -2,8 +2,8 @@
 <div class="tk">
     <div class="section">
         <b-row align-v="center" class="testando">
-            <b-col cols="2"></b-col>
-            <b-col cols="5">
+            <b-col cols md="2"></b-col>
+            <b-col cols="10" md="5">
                 <div class="sasas"></div>
                 <div class="texto">
                         PEQUENOS REPAROS,<br> FAZEM A DIFERENÇA!
@@ -28,6 +28,19 @@
   width:70vw;
   z-index: 9999;
 }
+@media only screen and (max-width: 720px){
+    .section{
+        width:145vw;
+    }
+   .sasas{
+    background:url('./img/obra1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:70%;
+    height: 50px;
+}
+}
+
 .test{
     background: url('./img/banner1small.jpg');
     background-size: cover;
