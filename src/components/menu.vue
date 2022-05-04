@@ -1,17 +1,30 @@
 <template>
     <div class="Menuu">
-       <div> <img class="abrange" src="./img/abr.png"></div>
-                    
-            <ul class="caralho">
+       
+            <b-row class="menun" align-h="center">
+                <b-col cols="3"><div class="abrange"></div></b-col>
+                <b-col cols="8">
+                    <ul class="caralho">
+                        <div class="he">  
+                        <!-- <li v-for="(item, index) in meni" v-bind:key="index" :class="index%2 === 0 ? 'par' : 'impar' "><a>{{item.funcao}}</a></li> -->
+                        <li v-for="(item, index) in meni" v-bind:key="index" >
+                        <a :href="item.href"><item-menu :text="item.funcao" :index="index" /> </a>
+                        </li>                
+                        <li Class="acesso" @click="penis()"><div class="tezi" ><a href="https://sistemagtf.com.br">ACESSO</a ></div></li>
+                        </div>
+                    </ul>
+                </b-col>    
+            </b-row>      
+                
+              <!-- <ul class="caralho">
                 <div class="he">  
-                <!-- <li v-for="(item, index) in meni" v-bind:key="index" :class="index%2 === 0 ? 'par' : 'impar' "><a>{{item.funcao}}</a></li> -->
+                 <li v-for="(item, index) in meni" v-bind:key="index" :class="index%2 === 0 ? 'par' : 'impar' "><a>{{item.funcao}}</a></li> 
                 <li v-for="(item, index) in meni" v-bind:key="index" >
                 <a :href="item.href"><item-menu :text="item.funcao" :index="index" /> </a>
                 </li>                
                 <li Class="acesso" @click="penis()"><div class="tezi" ><a href="https://sistemagtf.com.br">ACESSO</a ></div></li>
                 </div>
-            </ul>    
-                
+            </ul>     -->
         
     </div>
 </template>
@@ -52,6 +65,10 @@ export default {
     display:none;
     
 }
+@media only screen and (max-width: 1370px){
+    .abrange{ height: 50px !important; background:url("./img/abr.png"); background-size:cover; margin-top:.7em;}
+}
+
 @media only screen and (min-width: 1024px){
     /* PC */
 .Menuu{
@@ -61,17 +78,11 @@ export default {
     /* background: url('./img/tarja.png'); */
     background-image: linear-gradient(45deg, #49626f, #7fa1af);
     background-size: cover;
-    height: 14vh;
     margin:0px;
-         
+    min-width:100vw;
 }
-.abrange{min-width: 21vw; margin-left:7.5vw; padding-right: 5vw; padding-bottom: 2vh; height: 8vh}
-/* .impar{
-    background-color:thistle;
-}
-.par{
-    background-color: #78a;
-} */
+.abrange{ height:80px; background:url("./img/abr.png"); background-size:cover; }
+
  ul.caralho {
      
     list-style-type: none;
@@ -122,10 +133,9 @@ ul.caralho li a.active {
 .tezi:hover{
      transform: skewY(10deg);
 }
-/*
-
-.itens{padding:1vw; margin:40px;}
-.itens :hover{ background-color: aqua;}
-*/
 } 
+.menun{
+    margin-top:1em;
+    min-width: 100vw;
+}
 </style>

@@ -34,9 +34,8 @@
     </b-row>
                    <h1 class="laranja mt-5 pt-5">PARCEIROS</h1>
                    
-    <div class="prefeituras">
- 
-               <b-row>
+    <div>
+               <b-row align-h="center" class="prefeituras">
                    <b-col cols="12" md="2" class="cba"></b-col>
                    <b-col cols="12" md="2" class="pxr"></b-col>
                    <b-col cols="12" md="2" class="tbc"></b-col>
@@ -46,7 +45,7 @@
                </b-row>
     </div>
     <div class="foote">
-      <div></div>
+      <div>Tecnologia <strong>ABRANGE</strong> Resultados nems </div>
     </div>
 
 
@@ -75,9 +74,13 @@ export default {
 
 .foote
 {
-    background: url('./img/rodape.png');
-    background-size: cover;
-    height: 25.4vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(45deg,   #59727f, #86a5b1 );
+    background-size: contain;
+    height: 11vw;
+    color:#f9f9f9;
 }
 p { 
     color:#72849a;
@@ -107,11 +110,12 @@ p {
     justify-content: center;
 }
 .card {
-    background: url('./img/NOT.png');
-    height: 25rem;
-    width: 35rem!important;
+    background: url('./img/not.png');
+    height: 22rem;
+    width: 38rem!important;
     background-size: cover;
     width: 50vw;
+    border:0px;
  }
  .contedor {
      
@@ -120,30 +124,24 @@ p {
      padding:1em;
  }
  .prep{padding-top: 11em;}
-
-
  .prefeituras{
-        
-         display: flex;
-         padding:2em;
-         margin:1em;
-
+        width:100vw;
  }
- .cba{background:url('./img/rosario.png'); height: 8rem; width:8rem;  background-size: cover; }
- .tbc{background:url('./img/nova.png'); height: 8rem; width:8rem;  background-size: cover; }
- .pxr{background:url('./img/diamantino.png'); height: 8rem; width:8rem;  background-size: cover; }
- .jcr{background:url('./img/amm.png'); height: 8rem; width:8rem;  background-size: cover; }
- .alm{background:url('./img/peixoto.png'); height: 8rem; width:8rem;  background-size: cover; }
- .cdg{background:url('./img/barra.png'); height: 8rem; width:8rem;  background-size: cover; }
+ .cba{background:url('./img/rosario.png'); height: 10rem; width:10rem;  background-size: cover; }
+ .tbc{background:url('./img/nova.png'); height: 10rem; width:10rem;  background-size: cover; }
+ .pxr{background:url('./img/diamantino.png'); height: 10rem; width:10rem;  background-size: cover; }
+ .jcr{background:url('./img/amm.png'); height: 10rem; width:10rem;  background-size: cover; }
+ .alm{background:url('./img/peixoto.png'); height: 10rem; width:10rem;  background-size: cover; }
+ .cdg{background:url('./img/barra.png'); height: 10rem; width:10rem;  background-size: cover; }
 
      @media only screen and (max-width: 1400px){ 
-.cba{background:url('./img/rosario.png'); height: 8rem; width:8rem;  background-size: cover;}
- .tbc{background:url('./img/nova.png'); height: 8rem; width:8rem;  background-size: cover;}
- .pxr{background:url('./img/diamantino.png'); height: 8rem; width:8rem;  background-size: cover;}
- .jcr{background:url('./img/amm.png'); height: 8rem; width:8rem;  background-size: cover;}
- .alm{background:url('./img/peixoto.png'); height: 8rem; width:8rem;  background-size: cover;}
- .cdg{background:url('./img/barra.png'); height: 8rem; width:8rem;  background-size: cover;}
-     }
+.cba{background:url('./img/rosario.png'); height: 10rem; width:10rem;  background-size: cover;}
+ .tbc{background:url('./img/nova.png'); height: 10rem; width:10rem;  background-size: cover;}
+ .pxr{background:url('./img/diamantino.png'); height: 10rem; width:10rem;  background-size: cover;}
+ .jcr{background:url('./img/amm.png'); height: 10rem; width:10rem;  background-size: cover;}
+ .alm{background:url('./img/peixoto.png'); height: 10rem; width:10rem;  background-size: cover;}
+ .cdg{background:url('./img/barra.png'); height: 10rem; width:10rem;  background-size: cover;}
+ }
  @media only screen and (max-width: 762px){
       #contato{
                 display:none;
@@ -158,6 +156,4 @@ p {
 }
 p{font-size: 10pt;}
  }
-
-
 </style>

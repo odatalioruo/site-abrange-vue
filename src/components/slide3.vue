@@ -20,7 +20,7 @@
 .tk{ overflow: hidden;}
 .section {
   position:absolute;
-  background: url('./img/banner3big.jpg');
+  background: url('./img/veggies.jpg');
   background-size: cover;
   color: black;
   clip-path: polygon(0% 100%, 0% 0%, 76% 0%, 100% 100%);

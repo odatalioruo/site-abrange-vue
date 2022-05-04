@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="baba">
   <!-- <carousel /> -->
   <Menu />
   <carousel />
@@ -87,5 +87,11 @@ html {
 .center{
   display: flex;
   justify-content: center;
+}
+</style>
+
+<style scoped>
+.baba{
+  overflow-x:hidden!important;
 }
 </style>
