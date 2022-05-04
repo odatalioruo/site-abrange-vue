@@ -1,4 +1,5 @@
 <template>
+<div class="tk">
     <div class="section">
         <b-row align-v="center" class="testando">
             <b-col cols="2"></b-col>
@@ -12,10 +13,11 @@
         </b-row>
     </div>
     <div class="test"></div>
+</div>
 </template>
 
 <style lang="scss" scoped>
-
+.tk{ overflow: hidden;}
 .section {
   position:absolute;
   background: url('./img/banner1big.jpg');
@@ -29,6 +31,8 @@
 .test{
     background: url('./img/banner1small.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 15vw;
     position:absolute;
     width:100%;
     height:100%;
@@ -51,7 +55,7 @@ body {
 }
 .texto{
     padding-left:2em;
-    font-size:1.3em;
+    font-size:1.2em;
     color: #456;
     font-style: italic;
 }

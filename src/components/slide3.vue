@@ -1,21 +1,23 @@
 <template>
+<div class="tk">
     <div class="section">
         <b-row align-v="center" class="testando">
             <b-col cols="2"></b-col>
             <b-col cols="5">
                 <div class="sasas"></div>
                 <div class="texto">
-                       A MÃO DE OBRA QUE FALTA,<br>NÓS TEMOS!
+                      COMPROMETIMENTO NA <br> LOGÍSTICA E QUALIDADE!
                 </div>
             </b-col>
             <b-col cols="5"></b-col>
         </b-row>
     </div>
     <div class="test"></div>
+</div>
 </template>
 
 <style lang="scss" scoped>
-
+.tk{ overflow: hidden;}
 .section {
   position:absolute;
   background: url('./img/banner3big.jpg');
@@ -29,6 +31,8 @@
 .test{
     background: url('./img/banner3small.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 15vw;
     position:absolute;
     width:100%;
     height:100%;
@@ -42,7 +46,7 @@ body {
     height: 70vh;
 }
 .sasas{
-    background:url('./img/servico1.png');
+    background:url('./img/alimento4.png');
     background-size: contain;
     background-repeat: no-repeat;
 
@@ -51,7 +55,7 @@ body {
 }
 .texto{
     padding-left:2em;
-    font-size:1.3em;
+    font-size:1.2em;
     color: #456;
     font-style: italic;
 }

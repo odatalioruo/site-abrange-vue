@@ -1,21 +1,23 @@
 <template>
+<div class="tk">
     <div class="section">
         <b-row align-v="center" class="testando">
             <b-col cols="2"></b-col>
             <b-col cols="5">
                 <div class="sasas"></div>
                 <div class="texto">
-                       A MÃO DE OBRA QUE FALTA,<br>NÓS TEMOS!
+                       ELETRONICOS, EQUIPAMENTOS <br>E MÁQUINAS DE QUALIDADE.
                 </div>
             </b-col>
             <b-col cols="5"></b-col>
         </b-row>
     </div>
-    <div class="test"></div>
+    <div class="asd"></div>
+</div>
 </template>
 
 <style lang="scss" scoped>
-
+.tk{ overflow: hidden;}
 .section {
   position:absolute;
   background: url('./img/banner4big.jpg');
@@ -26,9 +28,11 @@
   width:70vw;
   z-index: 9999;
 }
-.test{
+.asd{
     background: url('./img/banner4small.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 15vw;
     position:absolute;
     width:100%;
     height:100%;
@@ -51,7 +55,7 @@ body {
 }
 .texto{
     padding-left:2em;
-    font-size:1.3em;
+    font-size:1.2em;
     color: #456;
     font-style: italic;
 }
