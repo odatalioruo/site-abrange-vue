@@ -2,12 +2,12 @@
    
     <div class="corpo">
         <b-row class="center">
-            <b-col cols="12" sm="3">
+            <b-col cols="12" lg="3">
                    <div class="cont">
                     <div class="imagem" @mousedown.middle="redirect"></div>
                     </div>
             </b-col>
-            <b-col cols="12" sm="5">
+            <b-col cols="12" lg="5">
                 <div class="texto">
              <h1 class="laranja">App exclusivo para clientes</h1>
             <p>

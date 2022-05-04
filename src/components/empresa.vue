@@ -18,10 +18,10 @@
 
     <div class="container">     
         <div ref="alpksd" class="produtos">
-            <!-- <div class="panel" v-for="(item, index) in produto" v-bind:key="index">
+             <div class="panel" v-for="(item, index) in produto" v-bind:key="index">
              <div>{{produto.penis}}<br></div>
             
-            </div> -->
+            </div> 
              <li class="panel" v-for="(user,index) in users" v-bind:key="'user'+index">
                {{user.name}}<br>{{user.email}}<br>{{user.username}}<br>{{user.website}}
              </li>
@@ -65,13 +65,7 @@ export default {
        ],
        //peniano:[]
        }
-    },
-
-     mounted() {
-        this.Testeaxios()
-        console.log(this.$refs.alpksd)
-     },
-   
+    }
 }
 </script>
 

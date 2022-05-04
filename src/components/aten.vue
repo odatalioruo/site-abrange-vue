@@ -33,15 +33,17 @@
 
     </b-row>
                    <h1 class="laranja mt-5 pt-5">PARCEIROS</h1>
+                   
     <div class="prefeituras">
  
-                <div class="penis">
-                    
-                        <b-col cols="12" sm="12" v-for="(item,index) in prefi" :class="item.class" v-bind:key="index">
-                            <div :class="item.class2"></div>
-                        </b-col>
-                    
-                </div>
+               <b-row>
+                   <b-col cols="12" md="2" class="cba"></b-col>
+                   <b-col cols="12" md="2" class="pxr"></b-col>
+                   <b-col cols="12" md="2" class="tbc"></b-col>
+                   <b-col cols="12" md="2" class="jcr"></b-col>
+                   <b-col cols="12" md="2" class="alm"></b-col>
+                   <b-col cols="12" md="2" class="cdg"></b-col>
+               </b-row>
     </div>
     <div class="foote">
       <div></div>
@@ -118,37 +120,29 @@ p {
      padding:1em;
  }
  .prep{padding-top: 11em;}
-.penis {  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-auto-columns: 1fr;
-  grid-auto-rows: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "a b c d e f";
-    width:70vw;
-}
+
 
  .prefeituras{
-         justify-content: center;
+        
          display: flex;
-         margin:.75em;
+         padding:2em;
+         margin:1em;
+
  }
- .cba{background:url('./img/rosario.png'); height: 11em; background-size: cover; }
- .tbc{background:url('./img/nova.png'); height: 11em; background-size: cover; }
- .pxr{background:url('./img/diamantino.png'); height: 11em; background-size: cover; }
- .jcr{background:url('./img/amm.png'); height: 11em; background-size: cover; }
- .alm{background:url('./img/peixoto.png'); height: 11em; background-size: cover; }
- .cdg{background:url('./img/barra.png'); height: 11em; background-size: cover; }
+ .cba{background:url('./img/rosario.png'); height: 8rem; width:8rem;  background-size: cover; }
+ .tbc{background:url('./img/nova.png'); height: 8rem; width:8rem;  background-size: cover; }
+ .pxr{background:url('./img/diamantino.png'); height: 8rem; width:8rem;  background-size: cover; }
+ .jcr{background:url('./img/amm.png'); height: 8rem; width:8rem;  background-size: cover; }
+ .alm{background:url('./img/peixoto.png'); height: 8rem; width:8rem;  background-size: cover; }
+ .cdg{background:url('./img/barra.png'); height: 8rem; width:8rem;  background-size: cover; }
 
      @media only screen and (max-width: 1400px){ 
-.cba{background:url('./img/rosario.png'); height: 8em; background-size: cover;}
- .tbc{background:url('./img/nova.png'); height: 8em; background-size: cover;}
- .pxr{background:url('./img/diamantino.png'); height: 8em; background-size: cover;}
- .jcr{background:url('./img/amm.png'); height: 8em; background-size: cover;}
- .alm{background:url('./img/peixoto.png'); height: 8em; background-size: cover;}
- .cdg{background:url('./img/barra.png'); height: 8em; background-size: cover;}
+.cba{background:url('./img/rosario.png'); height: 8rem; width:8rem;  background-size: cover;}
+ .tbc{background:url('./img/nova.png'); height: 8rem; width:8rem;  background-size: cover;}
+ .pxr{background:url('./img/diamantino.png'); height: 8rem; width:8rem;  background-size: cover;}
+ .jcr{background:url('./img/amm.png'); height: 8rem; width:8rem;  background-size: cover;}
+ .alm{background:url('./img/peixoto.png'); height: 8rem; width:8rem;  background-size: cover;}
+ .cdg{background:url('./img/barra.png'); height: 8rem; width:8rem;  background-size: cover;}
      }
  @media only screen and (max-width: 762px){
       #contato{
