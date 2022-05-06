@@ -18,10 +18,10 @@
 
     <b-row class="contain">     
         <b-row ref="alpksd" class="produtos">
-             <b-col cols="12" lg="5" class="panel" v-for="(item, index) in produto" v-bind:key="index">
+             <b-col cols="12" sm="5" class="panel" v-for="(item, index) in produto" v-bind:key="index">
               <div>
-                <img v-bind:src="item.emage" height="100px">
-                <a v-bind:href="item.link">{{item.nome}}</a>
+                <img v-bind:src="item.emage" style="height:77px; border-radius:1.3rem;"><br>
+                <a class="sk" v-bind:href="item.link">{{item.nome}}</a>
               </div>
             </b-col> 
              <!-- <li class="panel" v-for="(user,index) in users" v-bind:key="'user'+index">
@@ -58,10 +58,10 @@ export default {
         return{
           users:[],
        produto: [
-           { id: 0, emage: `./img/obras1.png`, link: '#obras', nome: 'OBRAS'},
-           { id: 1, emage: './img/servico0.png', link: '#servico', nome: 'SERVIÇOS'},
-           { id: 2, emage: './img/alimentos1.png', link: '#alimentos', nome: 'ALIMENTOS'},
-           { id: 3, emage: './img/controle1.png', link: '#controle', nome: 'CONTROLE'},
+           { id: 0, emage: 'img/obras1.png', link: '#obras', nome: 'OBRAS'},
+           { id: 1, emage: 'img/servico0.png', link: '#servico', nome: 'SERVIÇOS'},
+           { id: 2, emage: 'img/alimentos1.png', link: '#alimentos', nome: 'ALIMENTOS'},
+           { id: 3, emage: 'img/controle1.png', link: '#controle', nome: 'CONTROLE'},
        ],
        //peniano:[]
        }
@@ -70,6 +70,13 @@ export default {
 </script>
 
 <style scoped>
+.sk{
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 700;
+  font-family: 'light';
+  letter-spacing: 1px;
+}
 #produtos{
   padding-bottom: 2em;
 }
@@ -100,8 +107,11 @@ export default {
 }
 .panel
  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: linear-gradient(90deg, #789, #abc);
-  min-height: 4em;
+  padding: 1em;
   margin: 1em;
   border-radius: 1.25em;
   background-size: cover;

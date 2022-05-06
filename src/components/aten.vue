@@ -5,13 +5,13 @@
             <div class="card"></div>
         </div>
     </div>
-    
+<div class="screen">
     <b-row class="mt-5 " >
         <b-col cols="12" md="6" class="jasjaksjdlaskdjlsakjdlka">
             <b-row class="justify-content-center">
-                <b-col cols="12" md="6"></b-col>
-                <b-col cols="5" md="2"><div class="fotoum"></div></b-col>
-                <b-col cols="5" md="4"><p><strong>Central de Atendimento<br>
+                <b-col cols="2" lg="6"></b-col>
+                <b-col cols="3" lg="2"><div class="fotoum"></div></b-col>
+                <b-col cols="7" lg="4"><p><strong>Central de Atendimento<br>
                 (65) xxxx xxxx</strong><br>
                 Seg a sex - 8h às 11h30 de 13 às 17h30</p></b-col>
             </b-row>
@@ -32,7 +32,37 @@
         </b-col>
 
     </b-row>
-                   <h1 class="laranja mt-5 pt-5">PARCEIROS</h1>
+</div>
+<div class="smallsc">
+        <b-row class="mt-5">
+            <b-col cols="12" md="6" class="jasjaksjdlaskdjlsakjdlka">
+                <b-row class="justify-content-center">
+                    <b-col cols="2" lg="6"></b-col>
+                    <b-col cols="3" lg="2"><div class="fotoum"></div></b-col>
+                    <b-col cols="7" lg="4"><p><strong>Central de Atendimento<br>
+                    (65) xxxx xxxx</strong><br>
+                    Seg a sex - 8h às 11h30 de 13 às 17h30</p></b-col>
+                </b-row>
+                
+                
+            </b-col>
+            <b-col cols="12" md="6" class="jasjaksjdlaskdjlsakjdlka">
+                <b-row class="justify-content-center">
+                     <b-col cols="2" lg="6"></b-col>
+                <b-col cols="3" md="2"><div class="fotodois"></div>           
+                </b-col>
+                <b-col cols="7" md="4">
+                    <p><strong>E-mail</strong><br>
+                    Seg a sex - 8h às 11h30 de 13 às 17h30</p>
+                </b-col>
+                
+                </b-row>
+                
+            </b-col>
+
+    </b-row>
+</div>
+                   <h1 id="parceiros" class="laranja mt-5 pt-5">PARCEIROS</h1>
                    
     <div>
                <b-row align-h="center" class="prefeituras">
@@ -44,9 +74,11 @@
                    <b-col cols="12" md="2" class="cdg"></b-col>
                </b-row>
     </div>
-    <div class="foote">
-      <div>Tecnologia <strong>ABRANGE</strong> Resultados nems </div>
-    </div>
+    <b-row class="foote">
+        <b-col cols="12" class="emago"></b-col>
+        <b-col cols="12"></b-col>
+ 
+    </b-row>
 
 
 </template>
@@ -72,15 +104,17 @@ export default {
 
 <style scoped>
 
+
 .foote
 {
     display:flex;
     align-items: center;
     justify-content: center;
     background:linear-gradient(45deg,   #59727f, #86a5b1 );
-    background-size: contain;
-    height: 11vw;
+    background-size: cover;
+    height: 220px;
     color:#f9f9f9;
+    flex-direction: column;
 }
 p { 
     color:#72849a;
@@ -135,6 +169,7 @@ p {
  .cdg{background:url('./img/barra.png'); height: 10rem; width:10rem;  background-size: cover; }
 
      @media only screen and (max-width: 1400px){ 
+         .foote { height: 10em;}
 .cba{background:url('./img/rosario.png'); height: 10rem; width:10rem;  background-size: cover;}
  .tbc{background:url('./img/nova.png'); height: 10rem; width:10rem;  background-size: cover;}
  .pxr{background:url('./img/diamantino.png'); height: 10rem; width:10rem;  background-size: cover;}
@@ -142,7 +177,7 @@ p {
  .alm{background:url('./img/peixoto.png'); height: 10rem; width:10rem;  background-size: cover;}
  .cdg{background:url('./img/barra.png'); height: 10rem; width:10rem;  background-size: cover;}
  }
- @media only screen and (max-width: 762px){
+ @media only screen and (max-width: 900px){
       #contato{
                 display:none;
             }
@@ -150,10 +185,22 @@ p {
     display: flex;
     justify-content: center;
 }
+.screen{
+    display:none;
+}
+.smallsc{
+    display:contents;
+}
             .justify-content-center{
     display: flex;
     justify-content: center;
 }
 p{font-size: 10pt;}
+ }
+ .emago{
+     background: url("./img/28.png");
+     background-size: cover;
+     height: 5em;
+     width: 25em;
  }
 </style>

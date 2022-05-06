@@ -107,7 +107,19 @@ p{margin-top: 11px;}
 }
 
      @media only screen and (max-width: 1400px){
-         .acess{ font-size: 1.13em;}
+         
+         .tes{
+             height:22vh;
+         }
+          .engine{
+        min-height: 340px;       
+        background-size: cover;
+}
+ .obra{ min-height: 100px;}
+        .cont{
+            margin:8vh 0vh;
+            }
+         .acess{ font-size: 1.1em;}
      }
 
     @media only screen and (max-width: 991px){

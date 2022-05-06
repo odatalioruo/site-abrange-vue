@@ -7,7 +7,7 @@
                     <div class="imagem" @mousedown.middle="redirect"></div>
                     </div>
             </b-col>
-            <b-col cols="12" lg="5">
+            <b-col cols="12" lg="4">
                 <div class="texto">
              <h1 class="laranja">App exclusivo para clientes</h1>
             <p>
@@ -63,7 +63,7 @@ h1{line-height: 1.1; font-size:2.5em;}
 
 .imagem {
     background:url('./img/APP.png');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     grid-area: imagem;
     width: 300px; 
@@ -77,14 +77,23 @@ h1{line-height: 1.1; font-size:2.5em;}
 
  @media only screen and (max-width: 800px){
    .texto{
-    
+    margin:2em;
     font-size: 1.35em;
     padding:2em;
          }
+ 
 } 
 
+
+@media only screen and (max-width: 512px){
+       .imagem{
+    width: 200px; 
+    height: 200px;
+    }
+}
+
 @media only screen and (max-width: 1020px){
-    .texto{font-size: 0.9em;}
+    .texto{font-size: 0.9em; margin:2em;}
 
     .cont{
          justify-content: center;

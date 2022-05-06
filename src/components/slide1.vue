@@ -38,7 +38,7 @@
     background-repeat: no-repeat;
     width:70%;
     height: 50px;
-}
+    }
 }
 
 .test{
@@ -62,7 +62,6 @@ body {
     background:url('./img/obra1.png');
     background-size: contain;
     background-repeat: no-repeat;
-
     width:120%;
     height: 80px;
 }

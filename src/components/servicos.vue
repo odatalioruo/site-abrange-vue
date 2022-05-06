@@ -77,7 +77,7 @@ p{margin-top: 11px;}
    
 .engine{
     min-height: 400px;
-    background: url('./img/alimento2.jpg');
+    background: url('./img/servicohomem.jpg');
     background-size: cover;
 }
 .obra{
@@ -106,7 +106,18 @@ p{margin-top: 11px;}
     align-content: center;
 }
      @media only screen and (max-width: 1400px){
-         .acess{ font-size: 1.13em;}
+         .tes{
+             height:22vh;
+         }
+         .engine{
+        min-height: 340px;       
+        background-size: cover;
+}
+        .obra{ min-height: 100px;}
+        .cont{
+            margin:8vh 0vh;
+            }
+         .acess{ font-size: 1.1em;}
      }
     @media only screen and (max-width: 991px){
         .tes{ display:none; }
@@ -125,5 +136,6 @@ p{margin-top: 11px;}
             display: flex;
             justify-content: center;
         }
+   
 }
 </style>

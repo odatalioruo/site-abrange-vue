@@ -2,7 +2,7 @@
 <div class="tk">
     <div class="section">
         <b-row align-v="center" class="testando">
-            <b-col cols="2"></b-col>
+            <b-col cols md="2"></b-col>
             <b-col  cols="10" md="5">
                 <div class="sasas"></div>
                 <div class="texto">
@@ -52,6 +52,18 @@ body {
 
     width:120%;
     height: 80px;
+}
+@media only screen and (max-width: 720px){
+    .section{
+        width:145vw;
+    }
+   .sasas{
+    background:url('./img/controlex.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:70%;
+    height: 50px;
+}
 }
 .texto{
     padding-left:2em;

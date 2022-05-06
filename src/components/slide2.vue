@@ -2,7 +2,7 @@
 <div class="tk">
     <div class="section">
         <b-row align-v="center" class="testando">
-            <b-col cols="2"></b-col>
+            <b-col cols md="2"></b-col>
             <b-col  cols="10" md="5">
                 <div class="sasas"></div>
                 <div class="texto">
@@ -28,6 +28,18 @@
   width:70vw;
   z-index: 9999;
 }
+@media only screen and (max-width: 720px){
+    .section{
+        width:145vw;
+    }
+   .sasas{
+    background:url('./img/servico1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:70%;
+    height: 50px;
+    }
+}
 .test{
     background: url('./img/banner2small.jpg');
     background-size: cover;
@@ -49,14 +61,22 @@ body {
     background:url('./img/servico1.png');
     background-size: contain;
     background-repeat: no-repeat;
-
     width:120%;
     height: 80px;
 }
+
+.texto{
+    padding-left:2em;
+    font-size:1em;
+    color: #456;
+    font-style: italic;
+}
+@media only screen and (min-width: 720px){
 .texto{
     padding-left:2em;
     font-size:1.2em;
     color: #456;
     font-style: italic;
+}
 }
 </style>

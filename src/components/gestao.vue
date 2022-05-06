@@ -1,7 +1,7 @@
 <template>
         <div class="gestao">
         <div class="msg">
-            <h1 style="display:flex; justify-content:center">GESTÃO PARA<br> CONSTRUÇÃO</h1>
+            <h2 style="display:block; justify-content:center">GESTÃO PARA CONSTRUÇÃO</h2>
             <span>VANTAGENS ABRANGE</span>
           <ul>
               <li>Aprovação de orçamentos de custos</li>
@@ -25,7 +25,7 @@ export default {
 
 
 <style scoped>
-h1{margin-left: .35em; font-family: 'Bold'; line-height: 1.1;margin-bottom:28px;}
+h2{margin-left: .35em; font-family: 'Bold'; line-height: 1.1;}
 span{margin:1.5em; font-family: 'Bold';}
 .gestao{
     
@@ -36,12 +36,13 @@ span{margin:1.5em; font-family: 'Bold';}
     background-size: cover;
     align-items: center;
     font-family: 'Regular';
+    
     }
     .msg{
     font-size: 1.5em;
     margin-left: 8vw;
     text-align: left;
-    transform:scaleY(1.13)
+     transform:scaleY(1.16);
  }
  ul{margin:0px;}
  li{font-size: .75em;}
