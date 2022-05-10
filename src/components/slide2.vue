@@ -44,9 +44,9 @@
     background: url('./img/banner2small.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left: 15vw;
+    margin-left: 35vw;
     position:absolute;
-    width:100%;
+    width:70%;
     height:100%;
     z-index: 10;
 }

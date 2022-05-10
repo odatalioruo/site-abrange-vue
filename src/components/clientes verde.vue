@@ -9,7 +9,7 @@
             </b-col>
             <b-col cols="12" lg="4">
                 <div class="texto">
-             <h1 class="laranja">App exclusivo para clientes</h1>
+             <h1 class="verde">App exclusivo para clientes</h1>
             <p>
                 compra inovadora, o processo de pagamento e
                 finalização de compras é mais fácil, rápido e
@@ -50,7 +50,10 @@ h1{line-height: 1.1; font-size:2.5em;}
     height: 600px;
     overflow: hidden;
 }
-
+.verde{
+       color:rgb(45,148,113); 
+   font-family: 'Bold'!important;
+}
 
 .texto {
      font-size: 1.1em;
@@ -62,7 +65,7 @@ h1{line-height: 1.1; font-size:2.5em;}
 
 
 .imagem {
-    background:url('./img/obras3d.png');
+    background:url('./img/alimentos3d.png');
     background-size: contain;
     background-repeat: no-repeat;
     grid-area: imagem;

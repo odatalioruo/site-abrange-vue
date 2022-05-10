@@ -30,11 +30,11 @@
 }
 .asd{
     background: url('./img/banner4small.jpg');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    margin-left: 15vw;
+    margin-left: 40vw;
     position:absolute;
-    width:100%;
+    width:70%;
     height:100%;
     z-index: 10;
 }
@@ -49,7 +49,6 @@ body {
     background:url('./img/controlex.png');
     background-size: contain;
     background-repeat: no-repeat;
-
     width:120%;
     height: 80px;
 }

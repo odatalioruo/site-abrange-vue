@@ -6,12 +6,12 @@
         </div>
     </div>
 <div class="screen">
-    <b-row class="mt-5 " >
+    <b-row class="mt-5">
         <b-col cols="12" md="6" class="jasjaksjdlaskdjlsakjdlka">
             <b-row class="justify-content-center">
                 <b-col cols="2" lg="6"></b-col>
-                <b-col cols="3" lg="2"><div class="fotoum"></div></b-col>
-                <b-col cols="7" lg="4"><p><strong>Central de Atendimento<br>
+                <b-col cols="3" lg="1"><div class="fotoum"></div></b-col>
+                <b-col cols="7" lg="5"><p><strong>Central de Atendimento<br>
                 (65) xxxx xxxx</strong><br>
                 Seg a sex - 8h às 11h30 de 13 às 17h30</p></b-col>
             </b-row>
@@ -20,9 +20,9 @@
         </b-col>
         <b-col cols="12" md="6" class="jasjaksjdlaskdjlsakjdlka">
             <b-row class="justify-content-center">
-            <b-col cols="5" md="2"><div class="fotodois"></div>           
+            <b-col cols="5" md="1"><div class="fotodois"></div>           
             </b-col>
-            <b-col cols="5" md="4">
+            <b-col cols="5" md="5">
                 <p><strong>E-mail</strong><br>
                 Seg a sex - 8h às 11h30 de 13 às 17h30</p>
             </b-col>
@@ -37,9 +37,9 @@
         <b-row class="mt-5">
             <b-col cols="12" md="6" class="jasjaksjdlaskdjlsakjdlka">
                 <b-row class="justify-content-center">
-                    <b-col cols="2" lg="6"></b-col>
-                    <b-col cols="3" lg="2"><div class="fotoum"></div></b-col>
-                    <b-col cols="7" lg="4"><p><strong>Central de Atendimento<br>
+                    <b-col cols="2"></b-col>
+                    <b-col cols="3"><div class="fotoum"></div></b-col>
+                    <b-col cols="7"><p><strong>Central de Atendimento<br>
                     (65) xxxx xxxx</strong><br>
                     Seg a sex - 8h às 11h30 de 13 às 17h30</p></b-col>
                 </b-row>
@@ -48,10 +48,10 @@
             </b-col>
             <b-col cols="12" md="6" class="jasjaksjdlaskdjlsakjdlka">
                 <b-row class="justify-content-center">
-                     <b-col cols="2" lg="6"></b-col>
-                <b-col cols="3" md="2"><div class="fotodois"></div>           
+                     <b-col cols="2" ></b-col>
+                <b-col cols="3"><div class="fotodois"></div>           
                 </b-col>
-                <b-col cols="7" md="4">
+                <b-col cols="7">
                     <p><strong>E-mail</strong><br>
                     Seg a sex - 8h às 11h30 de 13 às 17h30</p>
                 </b-col>
@@ -74,13 +74,15 @@
                    <b-col cols="12" md="2" class="cdg"></b-col>
                </b-row>
     </div>
+<div class="asd">
     <b-row class="foote">
+        <b-col cols="12" md="3" class="a"></b-col>
         <b-col cols="12" class="emago"></b-col>
         <b-col cols="12"></b-col>
  
     </b-row>
 
-
+</div>
 </template>
 
 
@@ -96,7 +98,7 @@ export default {
             {id: 4, class: "d", class2:"jcr"},
             {id: 5, class: "e", class2:"alm"},
             {id: 6, class: "f", class2:"cdg"}
-        ]
+        ],
     }
     },
 }
@@ -104,38 +106,45 @@ export default {
 
 <style scoped>
 
-
+.screen{
+    display:contents;
+}
+.smallsc{
+    display:none;
+}
 .foote
 {
     display:flex;
     align-items: center;
     justify-content: center;
-    background:linear-gradient(45deg,   #59727f, #86a5b1 );
+    background:linear-gradient(45deg,   #135, #9ab );
     background-size: cover;
-    height: 220px;
+    height: 24vh;
     color:#f9f9f9;
     flex-direction: column;
+    overflow:hidden;
+
 }
 p { 
     color:#72849a;
-    font-size: 11pt;
+    font-size: .8em;
     text-align: left;
 }
 
 .fotoum {
         background:url('./img/icon_atendimento.png');
-        background-size: 4.5em;
+        background-size: 3.5em;
         background-repeat: no-repeat;
-        min-height: 4.5em;
-        min-width: 4.5em;
+        min-height: 3.5em;
+        min-width: 3.5em;
     }
 
 .fotodois {
        background:url('./img/icon_email.png');
-       background-size: 4.5em;
+       background-size: 3.5em;
        background-repeat: no-repeat;
-       min-height: 4.5em;
-       min-width: 4.5em;
+       min-height: 3.5em;
+       min-width: 3.5em;
      }
 
 .pen{
@@ -145,8 +154,8 @@ p {
 }
 .card {
     background: url('./img/not.png');
-    height: 22rem;
-    width: 38rem!important;
+    height: 200px;
+    width: 22rem!important;
     background-size: cover;
     width: 50vw;
     border:0px;
@@ -160,6 +169,8 @@ p {
  .prep{padding-top: 11em;}
  .prefeituras{
         width:100vw;
+        margin-top:4em;
+        margin-bottom:4em;
  }
  .cba{background:url('./img/rosario.png'); height: 10rem; width:10rem;  background-size: cover; }
  .tbc{background:url('./img/nova.png'); height: 10rem; width:10rem;  background-size: cover; }
@@ -177,9 +188,21 @@ p {
  .alm{background:url('./img/peixoto.png'); height: 10rem; width:10rem;  background-size: cover;}
  .cdg{background:url('./img/barra.png'); height: 10rem; width:10rem;  background-size: cover;}
  }
+  .emago{
+     background: url("./img/marca.png");
+     background-size: cover;
+     height: 42px;
+     width: 210px;
+
+ }
  @media only screen and (max-width: 900px){
       #contato{
                 display:none;
+            }
+            .emago{  background: url("./img/marca.png");
+                    background-size: cover;
+                    width:16em;
+                    height:3em;
             }
             .jasjaksjdlaskdjlsakjdlka{
     display: flex;
@@ -191,16 +214,21 @@ p {
 .smallsc{
     display:contents;
 }
-            .justify-content-center{
+.justify-content-center{
     display: flex;
     justify-content: center;
 }
-p{font-size: 10pt;}
  }
- .emago{
-     background: url("./img/28.png");
+ .asd{background: #72849a;}
+ .a{
+     background:url('./img/A.png');
      background-size: cover;
-     height: 5em;
-     width: 25em;
- }
-</style>
+     position:absolute;
+     height: 38vh;
+     width: 38vw;
+     margin-left:58vw;
+     overflow: hidden;
+     margin-bottom: 14vh;
+     max-width: 100vw;
+}
+</style> 

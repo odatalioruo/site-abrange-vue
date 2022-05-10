@@ -4,15 +4,15 @@
   <Menu />
   <carousel />
   <empresa />
-  <gestao />
-  <clientes />
+
   <onlin />
   <clientes />
   <servicos />  
-  <clientes />
+  <cinza />
   <alimento />
-  <clientes />
+  <verde />
   <controle />
+  <roxo />
   <atend />
 
 
@@ -21,11 +21,13 @@
 </template>
 
 <script>
-
+import cinza from './components/clientes cinza.vue'
+import verde from './components/clientes verde.vue'
+import roxo from './components/clientes roxo.vue'
 import carousel from './components/carousel.vue'
 import Menu from './components/menu.vue'
 import Empresa from './components/empresa.vue'
-import gestao from './components/gestao.vue'
+
 import clientes from './components/clientes.vue'
 import onlin from './components/onlin.vue'
 import atend from './components/aten.vue'
@@ -39,13 +41,15 @@ export default {
     carousel,
     Menu,
     Empresa,
-    gestao,
     clientes,
     onlin,
     atend,
     servicos,
     alimento,
-    controle
+    controle,
+    cinza,
+    verde,
+    roxo
   }
 }
 </script>

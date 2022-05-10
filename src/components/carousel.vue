@@ -58,12 +58,6 @@
           </label>
         </div>
       </li>
-      <!-- <div class="carousel-dots">
-        <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
-        <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
-        <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
-        <label for="img-4" class="carousel-dot" id="img-dot-4"></label>
-      </div> -->
     </ul>
   </div>
 </div>
@@ -75,11 +69,17 @@ import slide3 from './slide3.vue'
 import slide4 from './slide4.vue'
 
 export default {
+  
  components:{
    slide1,
    slide2,
    slide3,
    slide4
+ },
+ methods: {
+   the: function() {
+     alert('lkdlsakdlsksalkd')
+   }
  }
 }
 </script>
@@ -108,7 +108,7 @@ ul.slides {
     -webkit-user-select: none;
     -webkit-touch-callout: none;
 }
-
+span{color:rgb(255, 88,0);}
 ul.slides input {
     display: none; 
 }

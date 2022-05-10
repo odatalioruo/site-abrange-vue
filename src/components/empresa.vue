@@ -18,10 +18,11 @@
 
     <b-row class="contain">     
         <b-row ref="alpksd" class="produtos">
-             <b-col cols="12" sm="5" class="panel" v-for="(item, index) in produto" v-bind:key="index">
+             <b-col cols="12" sm="2" class="panel" v-for="(item, index) in produto" v-bind:key="index">
               <div>
-                <img v-bind:src="item.emage" style="height:77px; border-radius:1.3rem;"><br>
-                <a class="sk" v-bind:href="item.link">{{item.nome}}</a>
+                <a  v-bind:href="item.link">
+                <img class="sk" v-bind:src="item.emage" ><br>
+                </a>
               </div>
             </b-col> 
              <!-- <li class="panel" v-for="(user,index) in users" v-bind:key="'user'+index">
@@ -70,12 +71,17 @@ export default {
 </script>
 
 <style scoped>
+#servicos{
+  margin-top:1em;
+  margin-bottom: 2em;
+}
 .sk{
   text-decoration: none;
   color: whitesmoke;
   font-weight: 700;
   font-family: 'light';
   letter-spacing: 1px;
+height:100px; border-radius:1.3rem;
 }
 #produtos{
   padding-bottom: 2em;
@@ -88,16 +94,24 @@ export default {
 .produtos{
   margin: 0 auto;
   justify-content: center;
-  max-width: 1024px;
+  max-width: 1600px;
 }
 @media (min-width: 700px){
     .produtos { grid-template-columns: repeat(3, 1fr); }
    
 }
 @media (max-width: 700px){
+  .sk{
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 700;
+  font-family: 'light';
+  letter-spacing: 1px;
+height:100px; border-radius:1.3rem;
+}
   .panel
  {
-   background: linear-gradient(90deg, #789, #abc);
+   /* background: linear-gradient(90deg, #789, #abc); */
    min-height: 7em;
    min-width: 70vw;
    margin: 4em;
@@ -109,8 +123,6 @@ export default {
  {
   display: flex;
   align-items: center;
-  justify-content: center;
-  background: linear-gradient(90deg, #789, #abc);
   padding: 1em;
   margin: 1em;
   border-radius: 1.25em;
